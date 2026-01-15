@@ -6,10 +6,9 @@ This repository explores the application of Neural Networks and Dimensionality R
 This project applies basic machine learning techniques to a real biological dataset — **GSE45827**, a gene expression microarray dataset containing tumor and normal samples. The goal is to build and evaluate a binary classifier that distinguishes **tumor vs normal tissue** using PyTorch and scikit-learn.
 
 The project focuses on:
-- Loading and preprocessing real biological data  
-- Training a simple linear classifier 
-- Comparing optimizers (SGD vs Adam)
+- Loading and building automated biological pipeline (Series Matrix)  
 - Improving the linear classifier by adding non-linear layers (ReLU) 
+- Comparing optimizers (SGD vs Adam)
 - Understanding why accuracy alone can be misleading in biomedical ML  
 
 ## Dataset: GSE45827
