@@ -47,6 +47,21 @@ Overfitting: The model easily "memorizes" the specific 150 samples rather than l
 
 Class Imbalance: Significant differences in the number of samples per subtype (e.g., 41 Triple-negative vs. 11 Normal).
 
+## Future directions
+
+The notebook includes an ongoing investigation into:
+
+Class Balancing: How can we address the discrepancy between common and rare subtypes?
+
+Indicator Components: Can specific Principal Components be mapped back to specific cancer indicators?
+
+Overfitting Detection: Monitoring the gap where training loss decreases while validation loss increases.
+
+Model Pruning: Investigating weight pruning as a strategy to simplify the model and improve generalization.
+
+Optimal Architecture: Searching for the ideal depth and width for a network when data is scarce.
+
+
 ## Data Access
 
 You can download the dataset from GEO:
