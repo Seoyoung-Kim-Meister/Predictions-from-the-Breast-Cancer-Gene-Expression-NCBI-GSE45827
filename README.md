@@ -1,5 +1,5 @@
 # Tumor vs Normal Predictions from the Breast Cancer Gene Expression Data NCBI GSE45827.
-We use data from patients with primary invasive breast cancer (NCBI-GSE45827) to train a model making predictions.
+This repository explores the application of Neural Networks and Dimensionality Reduction (PCA) to classify breast cancer subtypes using gene expression data from the NCBI Gene Expression Omnibus (GEO).
 
 ## Project Overview
 
@@ -12,8 +12,6 @@ The project focuses on:
 - Improving the linear classifier by adding non-linear layers (ReLU) 
 - Understanding why accuracy alone can be misleading in biomedical ML  
 
----
-
 ## Dataset: GSE45827
 
 **Source:** Gene Expression Omnibus (GEO)
@@ -25,9 +23,29 @@ The project focuses on:
   - **Samples:** ~155  
   - **Features (genes):** ~30,000  
 
-This dataset is commonly used in cancer genomics benchmarking because it is relatively clean and well-labeled.
+The dataset contains expression profiles for primary invasive breast cancer. The goal is to classify samples into their respective biological subtypes:
 
----
+Basal-like (Triple-negative)
+
+HER2-positive
+
+Luminal A
+
+Luminal B
+
+Normal-like tissue and cell lines.
+
+## The "Small-n, Large-p" Challenge
+
+In bioinformatics, we often face the challenge of having a very small number of samples (n≈150) but a massive number of features (p~30,000 gene probes).
+
+This project serves as a transparent case study on the difficulties of training Deep Learning models on small biological datasets. Current models may perform near or below the mean baseline accuracy due to:
+
+High Variance: Small validation sets can lead to inconsistent accuracy metrics.
+
+Overfitting: The model easily "memorizes" the specific 150 samples rather than learning general biological patterns.
+
+Class Imbalance: Significant differences in the number of samples per subtype (e.g., 41 Triple-negative vs. 11 Normal).
 
 ## Data Access
 
