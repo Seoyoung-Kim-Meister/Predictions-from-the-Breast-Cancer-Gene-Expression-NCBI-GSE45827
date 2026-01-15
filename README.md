@@ -1,7 +1,7 @@
 # Tumor vs Normal Predictions from the Breast Cancer Gene Expression Data NCBI GSE45827.
 We use data from patients with primary invasive breast cancer (NCBI-GSE45827) to train a model making predictions.
 
-## 📌 Project Overview
+## Project Overview
 
 This project applies basic machine learning techniques to a real biological dataset — **GSE45827**, a gene expression microarray dataset containing tumor and normal samples. The goal is to build and evaluate a binary classifier that distinguishes **tumor vs normal tissue** using PyTorch, inspired by the fastai `04_mnist_basic` notebook.
 
@@ -13,7 +13,7 @@ The project focuses on:
 
 ---
 
-## 🧬 Dataset: GSE45827
+## Dataset: GSE45827
 
 **Source:** Gene Expression Omnibus (GEO)
 
@@ -28,15 +28,12 @@ This dataset is commonly used in cancer genomics benchmarking because it is rela
 
 ---
 
-## 📁 Data Access
+## Data Access
 
 You can download the dataset from GEO:
 
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45827
 
-Alternatively, in Python you can load it via `GEOparse`:
+Alternatively, I included the file to this repository which can be found under the following name:
 
-```python
-import GEOparse
-
-gse = GEOparse.get_GEO(geo="GSE45827")
+GSE45827_series_matrix.txt.gz
