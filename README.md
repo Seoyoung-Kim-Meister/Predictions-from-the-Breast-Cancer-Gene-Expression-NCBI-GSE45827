@@ -3,12 +3,13 @@ We use data from patients with primary invasive breast cancer (NCBI-GSE45827) to
 
 ## Project Overview
 
-This project applies basic machine learning techniques to a real biological dataset — **GSE45827**, a gene expression microarray dataset containing tumor and normal samples. The goal is to build and evaluate a binary classifier that distinguishes **tumor vs normal tissue** using PyTorch, inspired by the fastai `04_mnist_basic` notebook.
+This project applies basic machine learning techniques to a real biological dataset — **GSE45827**, a gene expression microarray dataset containing tumor and normal samples. The goal is to build and evaluate a binary classifier that distinguishes **tumor vs normal tissue** using PyTorch and scikit-learn.
 
 The project focuses on:
 - Loading and preprocessing real biological data  
-- Training a simple linear classifier  
-- Comparing optimizers (SGD vs Adam)  
+- Training a simple linear classifier 
+- Comparing optimizers (SGD vs Adam)
+- Improving the linear classifier by adding non-linear layers (ReLU) 
 - Understanding why accuracy alone can be misleading in biomedical ML  
 
 ---
