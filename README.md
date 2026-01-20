@@ -36,7 +36,7 @@ Normal-like tissue and cell lines.
 
 ## The "Small-n, Large-p" Challenge
 
-In bioinformatics, we often face the challenge of having a very small number of samples (n~150) but a massive number of features (p~30,000 gene probes).
+In bioinformatics, we often face the challenge of having a very small number of samples (n~150) but a large number of features (p~30,000 gene probes).
 
 This project serves as a transparent case study on the difficulties of training Deep Learning models on small biological datasets. Current models may perform near or below the mean baseline accuracy due to:
 
